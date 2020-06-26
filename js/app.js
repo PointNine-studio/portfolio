@@ -102,7 +102,7 @@ $('.js-prev').click(prevSlide);
         $(this).siblings('.answer').css({'height' : ''+$pHeight+'px'});
     })
 
-    $('.js-ifShows').addClass('on-screen')
+    // $('.js-ifShows').addClass('on-screen')
 
     //if element on screen
     //$(window).on('scroll', function(){
