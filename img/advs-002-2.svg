@@ -1,0 +1,12 @@
+<svg width="103" height="148" viewBox="0 0 103 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="3" y="3" width="97" height="131" rx="9" stroke="#606060" stroke-width="6"/>
+<path d="M34.8447 105.5H60.1553C61.4503 105.5 62.5 106.55 62.5 107.845V142.12C62.5 143.794 60.7962 144.929 59.2515 144.284L49.5603 140.235C48.242 139.684 46.758 139.684 45.4397 140.235L35.7485 144.284C34.2038 144.929 32.5 143.794 32.5 142.12V107.845C32.5 106.55 33.5497 105.5 34.8447 105.5Z" fill="white" stroke="#606060" stroke-width="3"/>
+<circle cx="47.764" cy="106.764" r="4.26402" stroke="#606060" stroke-width="5"/>
+<circle cx="47.5" cy="106.5" r="14" fill="white" stroke="#606060" stroke-width="3"/>
+<circle cx="47.5" cy="106.5" r="11" stroke="#606060"/>
+<line x1="25.4956" y1="36" x2="87.4956" y2="36" stroke="#606060" stroke-width="3" stroke-linecap="round"/>
+<line x1="25.4956" y1="45.5" x2="87.4956" y2="45.5" stroke="#606060" stroke-width="3" stroke-linecap="round"/>
+<line x1="25.4956" y1="55" x2="87.4956" y2="55" stroke="#606060" stroke-width="3" stroke-linecap="round"/>
+<line x1="25.4956" y1="64.5" x2="87.4956" y2="64.5" stroke="#606060" stroke-width="3" stroke-linecap="round"/>
+<line x1="25.4956" y1="74" x2="73.4956" y2="74" stroke="#606060" stroke-width="3" stroke-linecap="round"/>
+</svg>
