@@ -53,8 +53,6 @@ function prevSlide() {
 $('.js-next').click(nextSlide);
 $('.js-prev').click(prevSlide);
 
-
-
     //swiper
     var mySwiper = new Swiper ('.swiper-container', {
         effect: 'coverflow',
@@ -101,28 +99,6 @@ $('.js-prev').click(prevSlide);
         $(this).siblings('.answer').toggleClass('height')
         $(this).siblings('.answer').css({'height' : ''+$pHeight+'px'});
     })
-
-    // $('.js-ifShows').addClass('on-screen')
-
-    //if element on screen
-    //$(window).on('scroll', function(){
-        // $('.js-ifShows').each(function(){
-        //     let offset = $(this).offset(),
-        //         scroll = $(window).scrollTop(),
-        //         vis = $(window).height() - $(window).height() / $(this).data('vis');
-        //     if(scroll > offset.top - vis){
-        //         $(this).addClass('on-screen')
-        //     } else {
-        //         $(this).removeClass('on-screen');
-        //     }
-        // })
-        // //pricing on screen
-        // $('.on-screen').find('.js-form').each(function(i, el){
-        //     setTimeout(function(){ $(el).addClass('t-form'); }, 100 * i);
-        // });
-    //})
-
-
     //Background parallax
     window.addEventListener('scroll', function(){
         const move = document.querySelectorAll('.js-move')

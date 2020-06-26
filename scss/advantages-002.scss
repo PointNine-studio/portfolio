@@ -1,6 +1,6 @@
 .advs-002{
     .container{
-        padding-top: 90px;
+        padding-top: 120px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -20,7 +20,6 @@
         width: 33.33333%;
         margin-bottom: 80px;
         &:nth-of-type(2n) .wrapper{
-            transform: scale(.6);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -38,16 +37,10 @@
             }
         }
     }
-    &.on-screen{
-        .wrapper{
-            transform: scale(1) !important;
-        }
-    }
     .wrapper{
-        transform: scale(1.2);
+        // transform: scale(1.2);
         display: block;
         transition: 2s cubic-bezier(0.42, 0, 0, 1.96);
-        // transform-origin: bottom;
     }
     img{
         transform: scale(1.2);
