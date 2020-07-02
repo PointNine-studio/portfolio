@@ -8,7 +8,7 @@ $( document ).ready(function() {
             }, 3000);
     })
 
-$(".s-c-h:first-of-type").addClass('s-c');
+// $(".s-c-h:first-of-type").addClass('s-c');
 
 function nextSlide() { 
     let $this = $(this);
@@ -53,6 +53,8 @@ function prevSlide() {
 $('.js-next').click(nextSlide);
 $('.js-prev').click(prevSlide);
 
+
+
     //swiper
     var mySwiper = new Swiper ('.swiper-container', {
         effect: 'coverflow',
@@ -91,7 +93,7 @@ $('.js-prev').click(prevSlide);
     //contact form show/hide
     $('.cta').on('click', function(){
         $('.popup-001').addClass('blur')
-        $('body').addClass('o-hidden')
+        $('body').toggleClass('o-hidden')
     })
     //dropdown toggle
     $('.question').on('click', function(){
@@ -99,6 +101,34 @@ $('.js-prev').click(prevSlide);
         $(this).siblings('.answer').toggleClass('height')
         $(this).siblings('.answer').css({'height' : ''+$pHeight+'px'});
     })
+
+    $('.prc-001 .p-holder').addClass('hidden')
+    $('.prc-001 .unwrap').on('click', function(){
+        $('.prc-001 .p-holder').toggleClass('hidden')
+        $('.prc-001 .unwrap').toggleClass('d-none')
+    })
+
+
+
+    //if element on screen
+    $(window).on('scroll', function(){
+        $('.js-if').each(function(){
+            let offset = $(this).offset(),
+                scroll = $(window).scrollTop(),
+                vis = $(window).height() - $(window).height() / $(this).data('vis');
+            if(scroll > offset.top - vis){
+                $(this).addClass('on-screen')
+            } else {
+                $(this).removeClass('on-screen');
+            }
+        })
+        // //pricing on screen
+        // $('.on-screen').find('.js-form').each(function(i, el){
+        //     setTimeout(function(){ $(el).addClass('t-form'); }, 100 * i);
+        // });
+    })
+
+
     //Background parallax
     window.addEventListener('scroll', function(){
         const move = document.querySelectorAll('.js-move')

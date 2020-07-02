@@ -12,6 +12,8 @@ body{
     overflow-x: hidden;
 }
 .page{
+    overflow-x: hidden;
+    overflow-y: hidden;
     position: static;
 }
 .container{
@@ -24,6 +26,9 @@ body{
 }
 .tr-none{
     transform: none !important;
+}
+.d-none{
+    display: none !important;
 }
 .hide-up{
     transform: scale(2);

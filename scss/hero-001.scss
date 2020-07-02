@@ -8,7 +8,7 @@
     }
     .bg{
         position: absolute;
-        height: 90%;
+        height: 100%;
         width: 100%;
         background-image: url(../img/hero-001-bg.jpg);
         background-position: center;
@@ -28,7 +28,7 @@
         max-width: 88%;
         margin: 0 auto 30px;
         // background-color: white;
-        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.06);
+        // box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.06);
         border-radius: 12px;
     }
     .inner-bg{
@@ -38,15 +38,15 @@
         position: absolute;
         top: 0;bottom: 0;left: 0;right: 0;
         border-radius: 12px;
-        background-color: rgba(255, 255, 255, 0.98);
+        background-color: rgba(255, 255, 255, 0.0);
     }
     .g-form{
         position: absolute;
         left: -3%;
-        top: 4%;
-        height: 83%;
+        top: 1%;
+        height: 90%;
         width: 36%;
-        border: 40px solid rgba(0, 0, 0, 0.026);
+        border: 40px solid rgba(0, 0, 0, 0.1);
         border-left: 0px;
         &::after{
             content: '';
@@ -73,23 +73,6 @@
             box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.08);
         }
     }
-    .heading{
-        min-height: 50%;
-        margin-top: 20px;
-        padding-left: 4%;
-    }
-    h1{
-        line-height: 1.1;
-        display: block;
-        font-size: 40px;
-        font-weight: 700;
-        padding-bottom: 60px;
-    }
-    span:first-of-type{
-        line-height: 1.5;
-        font-size: 90px;
-        font-weight: 100;
-    }
     .color-box-1,
     .color-box-2,
     .color-box-3{
@@ -109,8 +92,9 @@
         margin-left: auto;
     }
     .color-box-2{
-        width: 40%;
+        width: 103%;
         height: 100%;
+        background: linear-gradient(90deg, rgba(219, 244, 219, 1) 0%, rgba(219, 244, 219, 0.8) 100%);
     }
     .color-box-3{
         width: 50%;
@@ -119,7 +103,6 @@
     ul{
         padding-top: 10px;
         padding-bottom: 22px;
-        margin: 0 auto;
         width: auto;
         display: table;
         transform: translateX(30%);
@@ -135,10 +118,34 @@
         border-radius: 100px;
         box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
     }
+    h1{
+        line-height: 1.1;
+        display: block;
+        font-size: 40px;
+        font-weight: 700;
+        padding-bottom: 60px;
+    }
+    .heading{
+        min-height: 50%;
+        margin-top: 20px;
+        padding-left: 4%;
+    }
+    span:first-of-type{
+        line-height: 1.5;
+        font-size: 2.25em;
+        font-weight: 100;
+    }
     h2{
-        font-size: 18px;
-        font-weight: 400;
-        padding: 18px 8% 18px 8%;
+        display: table;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 5px 60px;
+        margin: 18px;
+        margin-left: 6%;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+        border-radius: 100px;
+        color: #555555;
     }
     .cta-holder{
         width: 100%;
@@ -175,9 +182,82 @@
     }
     .image{
         position: absolute;
-        bottom: 10%;
+        bottom: 11%;
         right: 10%;
         width: 25%;
         filter: drop-shadow(-0.6px 6px 8px rgba(0, 0, 0, 0.18));
+    }
+}
+@media (max-width: 800px){
+    .hero-001{
+        ul{
+            transform: translateX(20%);
+        }
+        .cta{
+            margin-left: 2%;
+        }
+    }
+}
+@media (max-width: 740px){
+    .hero-001{
+        .g-form::before{
+            display: none;
+        }
+        h1{
+            font-size: 28px;
+        }
+        ul{
+            transform: translateX(0);
+        }
+        .image{
+            bottom: -5px;
+        }
+        .color-box-1{
+            width: 65%;
+        }
+    }
+}
+@media (max-width: 620px){
+    .hero-001{
+        .color-box-3, .image{
+            display: none;
+        }
+        .color-box-1{
+            margin-top: 0;
+        }
+        .heading{
+            margin-top: 40px;
+        }
+        h1{
+            font-size: 28px;
+        }
+        span:first-of-type{
+            font-size: 1.3em;
+            font-weight: 300;
+        }
+        .cta-holder{
+            padding-top: 70px;
+        }
+        h2,.cta{
+            margin-left: auto;
+            margin-right: auto;
+            left: 3px;
+        }
+        h2{
+            padding: 5px 36px;
+            text-align: center;
+        }
+        .g-form{
+            top: 8%;
+            width: 108%;
+            height: 90%;
+        }
+    }
+}
+@media (max-width: 500px){
+    .hero-001{
+        .color-box-1{
+            width: 85%;
+        }
     }
 }

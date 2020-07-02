@@ -1,0 +1,14 @@
+<svg width="196" height="139" viewBox="0 0 196 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="85" y="3" width="108" height="133" rx="8" stroke="#606060" stroke-width="6"/>
+<path d="M104 17.0903V27.0903" stroke="#606060" stroke-linecap="round"/>
+<path d="M104 35.0903V45.0903" stroke="#606060" stroke-linecap="round"/>
+<path d="M104 53.0903V63.0903" stroke="#606060" stroke-linecap="round"/>
+<line x1="118.5" y1="33.5" x2="170.5" y2="33.5" stroke="#606060" stroke-width="3" stroke-linecap="round"/>
+<line x1="118.5" y1="46.5" x2="170.5" y2="46.5" stroke="#606060" stroke-width="3" stroke-linecap="round"/>
+<line x1="118.5" y1="59.5" x2="170.5" y2="59.5" stroke="#606060" stroke-width="3" stroke-linecap="round"/>
+<line x1="108.5" y1="81.5" x2="170.5" y2="81.5" stroke="#606060" stroke-width="3" stroke-linecap="round"/>
+<line x1="108.5" y1="94.5" x2="170.5" y2="94.5" stroke="#606060" stroke-width="3" stroke-linecap="round"/>
+<line x1="108.5" y1="107.5" x2="170.5" y2="107.5" stroke="#606060" stroke-width="3" stroke-linecap="round"/>
+<rect x="1.5" y="64.5" width="57" height="57" rx="28.5" fill="white" stroke="#606060" stroke-width="3"/>
+<path d="M53 60.3999L32.7979 100.804C32.1452 102.11 30.3591 102.299 29.4473 101.159L17 85.5999" stroke="#606060" stroke-width="8.1" stroke-linecap="round"/>
+</svg>

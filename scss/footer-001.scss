@@ -48,6 +48,7 @@
     .phone{
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap-reverse;
         margin-top: 80px;
     }
     ul{
@@ -112,7 +113,7 @@
         width: 95%;
         display: flex;
         flex-direction: column;
-        margin-top: 0;
+        margin: 0 12px 0 12px;
     }
     .form_parent div{
         color: white;
@@ -241,5 +242,55 @@
         color: #555555;
         line-height: 22px;
         text-transform: uppercase;
+    }
+}
+@media (max-width: 900px){
+    .ftr-001{
+        h2{
+            padding-left: 20px;
+        }
+        .link{
+            width: 14%;
+        }
+    }
+}
+@media (max-width: 600px){
+    .ftr-001{
+        h2{
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        iframe{
+            width: 94%;
+        }
+        .phone{
+            margin-top: 40px;
+        }
+        ul{
+            padding-bottom: 30px;
+        }
+        .socials{
+            bottom: 6%;
+        }
+    }
+}
+@media (max-height: 600px){
+    .ftr-001{
+        .form{
+            display: none;
+        }
+        .phone{
+            margin-top: 30%;
+        }
+    }
+}
+@media (max-height: 400px){
+    .ftr-001{
+        .phone{
+            margin-top: 30px;
+        }
+        .link{
+            width: 12%;
+        }
     }
 }

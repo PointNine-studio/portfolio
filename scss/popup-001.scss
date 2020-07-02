@@ -24,11 +24,11 @@
         font-size: 16px;
         font-weight: 700;
         border-radius: 100px;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.3);
         box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
         transform: translateX(500px);
         transition: .2s ease;
-        transition-delay: .6s;
+        transition-delay: transform .6s;
         z-index: 2;
         cursor: pointer;
         &:hover{
@@ -51,7 +51,8 @@
         width: 500px;
         max-width: 100%;
         border-left: 3px solid white;
-        background-color: rgba(245, 243, 243, 0.92);
+        background: linear-gradient(180deg, rgba(219, 244, 219, 0.8) 60%, rgba(255, 255, 255, 1) 100%);
+        // background: rgba(219, 244, 219, 1);
         transform: translateX(500px);
         transition: .3s ease;
         transition-delay: .6s;
@@ -81,11 +82,12 @@
     }
     input{
         width: 100%;
-        color: rgba(111, 111, 111, 1);
-        background-color: white;
+        color: white;
+        background-color: #6d6d6d;
+        background-color: rgba(0, 0, 0, 0.5);
         border: 0;
         padding: 10px;
-        padding-left: 10px;
+        padding-left: 16px;
         margin: 6px auto;
         border-radius: 100px;
         box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
@@ -97,7 +99,9 @@
     }
     textarea{
         width: 100%;
-        background-color: white;
+        background-color: #6d6d6d;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
         border: 0;
         outline: none;
         border-radius: 7px;
@@ -110,7 +114,7 @@
         }
     }
     ::-webkit-input-placeholder {
-        color:rgba(70, 70, 70, 0.4);
+        color:rgb(255, 255, 255);
     }
     input[type="checkbox"]{
         position: absolute;
@@ -157,8 +161,9 @@
         width: 70%;
         font-size: 1.2em;
         font-weight: 600;
-        color: #646464;
-        background: white;
+        color: #ffffff;
+        background: #6d6d6d;
+        background-color: rgba(0, 0, 0, 0.5);
         padding: 12px 30px;
         border-radius: 100px;
         margin: 36px auto 0 auto;
@@ -209,3 +214,20 @@
          top: -1px;
     }
  }
+@media (max-height: 600px){
+    .popup-001{
+        .holder{
+            width: 100%;
+        }
+        input{
+            margin: 2px auto;
+        }
+        textarea{
+            margin-top: 4px;
+            height: 114px;
+        }
+        input[type="submit"]{
+            margin-top: 14px;
+        }
+    }
+}
