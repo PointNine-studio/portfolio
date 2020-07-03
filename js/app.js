@@ -1,15 +1,5 @@
 $( document ).ready(function() {
 
-    $(window).on('load', function(){
-        $('.preloader').addClass('hide-up')
-        $('body').removeClass('o-hidden')
-        setTimeout( function() {
-            $('.preloader').remove()
-            }, 3000);
-    })
-
-// $(".s-c-h:first-of-type").addClass('s-c');
-
 function nextSlide() { 
     let $this = $(this);
     let $current = $this.siblings('.s-c-h.s-c');
